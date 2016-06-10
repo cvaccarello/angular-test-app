@@ -1,0 +1,20 @@
+
+// Using a cross between SMACSS, ITCSS, and OOCSS principles, with a bit of customization to better match this project
+// reference: http://csswizardry.net/talks/2014/11/itcss-dafed.pdf
+// reference: http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+// reference: https://smacss.com/book/categorizing
+
+// Settings:	Global variables, config switches
+@import 'mycss/1-settings/index';
+
+// Tools:		Default mixins, functions, and utility classes
+@import 'mycss/2-tools/index';
+
+// Base:		Unclassed HTML elements
+@import 'mycss/3-base/index';
+
+// Objects:		Cosmetic-free Patterns, Layouts, Wrappers, Containers, etc.  These are like SMACSS Layout Rules.
+@import 'mycss/4-objects/index';
+
+// Modules:		Chunks of small reusable UI classes / components
+@import 'mycss/5-modules/index';

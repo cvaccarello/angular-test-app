@@ -9,13 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var core_2 = require('@angular/core');
+// Turned off encapsulation so that I could style the entire document at the body element
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: require('./app.component.html')
+            template: require('./app.component.html'),
+            styles: [require('./../styles/app.scss')],
+            encapsulation: core_2.ViewEncapsulation.None
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
