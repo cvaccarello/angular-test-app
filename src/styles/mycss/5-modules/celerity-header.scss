@@ -1,0 +1,120 @@
+
+.celerity-header {
+
+	/** override bootstrap navbar for celerity header only (not all navbars) **/
+	.navbar {
+		margin: 0;
+		border: 0 none;
+		border-radius: 0;
+	}
+
+	.navbar-default {
+		color: $color-purple;
+		background: #ffffff;
+		padding: 5px 0;
+	}
+
+	.navbar-inverse {
+		color: #ffffff;
+		background: $color-purple;
+		border-top: 1px solid $color-darkpurple;
+		border-bottom: 1px solid $color-darkpurple;
+		box-shadow: inset 0 1px 0 $color-lightpurple;
+
+		.navbar-toggle:focus,
+		.navbar-toggle:hover {
+			background: transparent;
+		}
+
+		.navbar-toggle:hover {
+			text-decoration: underline;
+		}
+
+		.celerity-notification {
+			margin-right: 15px;
+		}
+
+		.badge {
+			color: $color-black;
+			background-color: #ffffff;
+			margin-right: 5px;
+		}
+
+		// must select anchors this way b/c of bootstrap specificity
+		.navbar-nav > li > a {
+			color: #ffffff;
+			// override bootstrap padding at larger resolutions
+			padding: 10px 15px;
+		}
+	}
+
+	.navbar-toggle {
+		float: left;
+		border: 0 none;
+	}
+
+	.list-group {
+		padding: 5px 0;
+		margin-bottom: 0;
+	}
+
+	.list-group-item {
+		border: 0 none;
+		padding: 0 15px;
+	}
+}
+
+// TODO:  this isn't a great name... should make it more meaningful some day
+.celerity-miniheader {
+	color: $color-grey;
+	font-size: 0.8em;
+
+	a {
+		color: $color-grey;
+		text-decoration: none;
+		border-bottom: 1px solid;
+	}
+}
+
+.celerity-header-profile {
+	margin: 0;
+
+	> li {
+		vertical-align: top;
+		display: inline-block;
+	}
+}
+
+.celerity-header-profile-picture {
+	$size: 40px;
+
+	background: $color-green;
+	width: $size;
+	margin: 5px 0;
+	padding-bottom: 100%;
+	border-radius: $size;
+}
+
+.celerity-subheader-collapsed-buttons {
+	float: none;
+
+	@media ($bp-sm) {
+		float: right;
+	}
+}
+
+.celerity-subheader-buttons {
+	float: none;
+
+	@media ($bp-sm) {
+		float: left;
+	}
+}
+
+.celerity-subheader-notifications {
+	float: right;
+
+	li {
+		display: inline-block;
+	}
+}

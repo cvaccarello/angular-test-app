@@ -11,4 +11,5 @@ import { ViewEncapsulation } from '@angular/core';
 
 export class AppComponent {
 	client_name = 'Client Name';
+	customer_name = 'Customer Name';
 }

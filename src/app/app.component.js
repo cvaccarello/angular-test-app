@@ -14,6 +14,7 @@ var core_2 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.client_name = 'Client Name';
+        this.customer_name = 'Customer Name';
     }
     AppComponent = __decorate([
         core_1.Component({

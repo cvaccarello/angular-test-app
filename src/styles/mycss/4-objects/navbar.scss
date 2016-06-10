@@ -1,0 +1,13 @@
+// override bootstrap navbar
+.navbar {
+	min-height: 40px;
+}
+
+// override bootstrap navbar brand
+.navbar-brand {
+	padding: 10px;
+
+	> img {
+		height: 100%;
+	}
+}
