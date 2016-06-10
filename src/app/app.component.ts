@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ViewEncapsulation} from '@angular/core';
+import { ViewEncapsulation } from '@angular/core';
 
 // Turned off encapsulation so that I could style the entire document at the body element
 @Component({
@@ -9,4 +9,6 @@ import {ViewEncapsulation} from '@angular/core';
 	encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent { }
+export class AppComponent {
+	client_name = 'Client Name';
+}

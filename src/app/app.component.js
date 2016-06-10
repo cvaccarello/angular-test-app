@@ -13,6 +13,7 @@ var core_2 = require('@angular/core');
 // Turned off encapsulation so that I could style the entire document at the body element
 var AppComponent = (function () {
     function AppComponent() {
+        this.client_name = 'Client Name';
     }
     AppComponent = __decorate([
         core_1.Component({
