@@ -2,3 +2,56 @@
 .highchart-container {
 	padding: 20px;
 }
+
+.highchart-legend {
+	font-weight: 800;
+	margin: 0;
+	padding: 0 30px;
+}
+
+.highchart-name {
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.highchart-metric {
+	font-size: 1.2em;
+	font-weight: 800;
+	margin-left: 15px;
+}
+
+.highchart-metric-positive {
+	color: #8dc43f;
+}
+
+.highchart-legend-item {
+	$size: 8px;
+
+	margin-left: 20px;
+
+	&:before {
+		content: '';
+		width: $size; height: $size;
+		margin-right: 5px;
+		border-radius: $size;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&.first {
+		color: $color-purple;
+	}
+
+	&.first:before {
+		background: $color-purple;
+	}
+
+
+	&.second {
+		color: $color-green;
+	}
+
+	&.second:before {
+		background: $color-green;
+	}
+}

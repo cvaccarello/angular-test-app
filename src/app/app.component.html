@@ -176,7 +176,14 @@
 								</div>
 
 								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
-									<div id="highchart-columnchart-container" class="highchart-container">
+									<header>
+										<ul class="highchart-legend list-inline">
+											<li><h3 class="highchart-name">Chart Name <span class="highchart-metric highchart-metric-positive"><i class="fa fa-caret-up" aria-hidden="true"></i> 1%</span></h3></li>
+											<li class="highchart-legend-item first">Year</li>
+											<li class="highchart-legend-item second">Year</li>
+										</ul>
+									</header>
+									<div id="highchart-columnchart-container" class="panel-body">
 										<chart [options]="options"></chart>
 									</div>
 								</div>

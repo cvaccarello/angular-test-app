@@ -22,8 +22,14 @@ export class AppComponent {
 				renderTo: 'highchart-columnchart-container',
 				type: 'column'
 			},
+			credits: {
+				enabled: false
+			},
+			legend: {
+				enabled: false
+			},
             title : {
-				text: 'Chart Name'
+				text: null
 			},
 			xAxis: {
 				title: {
