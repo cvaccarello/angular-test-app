@@ -24,6 +24,15 @@
 		padding: 0;
 	}
 
+	.nav > li > a {
+		padding: 6px 15px;
+
+		.caret {
+			color: lighten($color-grey, 10%);
+			margin-left: 15px;
+		}
+	}
+
 	footer {
 		padding: 30px;
 
