@@ -1,0 +1,52 @@
+
+.celerity-panel {
+	background: darken($color-background, 2%);
+	margin-top: 30px;
+	margin-bottom: 0;
+
+	&.celerity-panel-bordered {
+		.panel-heading {
+			border-bottom: 4px solid $color-purple;
+		}
+	}
+
+	.panel-heading {
+		background: #ffffff;
+	}
+
+	.panel-title {
+		padding: 7px 0;
+	}
+
+	.panel-body {
+		padding: 0;
+	}
+}
+
+
+.celerity-subpanel {
+	padding: 0;		// no grid gutters
+	margin: -1px;
+	border-radius: 0;
+
+	&.celerity-panel-bordered {
+		.panel-heading {
+			border-top: 4px solid $color-green;
+		}
+	}
+
+	.panel-heading {
+		border: 0 none;
+		border-radius: 0;
+	}
+
+	.panel-title {
+		font-size: 1.2em;
+		font-weight: 800;
+		border-bottom: 1px solid darken($color-background, 10%);
+	}
+
+	.panel-body {
+		padding: 10px 30px;
+	}
+}
