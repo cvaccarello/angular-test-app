@@ -65,5 +65,7 @@
 // Special flexbox just for panels
 // NOTE:  There is a catch to this, you can't have the inner panels float left or right
 .celerity-panel-flexbox {
-	display: flex;
+	@media ($bp-sm) {
+		display: flex;
+	}
 }
