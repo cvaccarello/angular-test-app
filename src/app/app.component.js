@@ -44,6 +44,37 @@ var AppComponent = (function () {
                     text: null
                 }
             },
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        color: '#b2ba1c',
+                        style: {
+                            fontSize: '16px',
+                            fontWeight: 'bold',
+                            textShadow: '',
+                        },
+                        // This funtion could likely be optimized if the "max value" was determined on load...
+                        // NOTE:  This also could display multiple values if several series are tied for the top value
+                        formatter: function () {
+                            // get max value of all series in use
+                            var series = this.series.chart.series;
+                            var max_value = series[0].dataMax;
+                            for (var i = 1; i < series.length; i++) {
+                                var s = series[i];
+                                max_value = Math.max(max_value, s.dataMax);
+                            }
+                            if (this.y == max_value) {
+                                return this.y + '%';
+                            }
+                            return null;
+                        }
+                    }
+                }
+            },
             series: [{
                     name: 'year',
                     data: [42, 40, 37, 40, 45, 50, 60, 77]

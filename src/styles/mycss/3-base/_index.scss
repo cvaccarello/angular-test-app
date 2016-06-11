@@ -8,7 +8,11 @@ body {
 }
 
 main {
-	padding-bottom: 300px;
+	padding-bottom: 350px;
+
+	@media ($bp-sm) {
+		padding-bottom: 260px;
+	}
 }
 
 section {
