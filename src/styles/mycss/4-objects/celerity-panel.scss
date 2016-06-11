@@ -23,10 +23,11 @@
 	}
 }
 
-
 .celerity-subpanel {
 	padding: 0;		// no grid gutters
-	margin: -1px;
+	margin: 0;
+	border-width: 0;
+	border-left-width: 1px;
 	border-radius: 0;
 
 	&.celerity-panel-bordered {
@@ -49,4 +50,10 @@
 	.panel-body {
 		padding: 10px 30px;
 	}
+}
+
+// Special flexbox just for panels
+// NOTE:  There is a catch to this, you can't have the inner panels float left or right
+.celerity-panel-flexbox {
+	display: flex;
 }
