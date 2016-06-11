@@ -36,6 +36,7 @@
 
 		.celerity-notification {
 			margin-right: 15px;
+			@media ($bp-sm) { margin-right: 0; }
 		}
 
 		.badge {
@@ -109,9 +110,11 @@
 
 .celerity-subheader-buttons {
 	float: none;
+	margin-left: 0;
 
 	@media ($bp-sm) {
 		float: left;
+		margin-left: -12px;
 	}
 }
 

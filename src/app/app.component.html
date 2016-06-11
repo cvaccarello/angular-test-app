@@ -1,8 +1,9 @@
 <div class="page-wrapper">
 	<header class="celerity-header">
 		<nav class="navbar navbar-default">
-			<div class="container-fluid">
+			<div class="container">
 
+				<div class="row">
 					<div class="col-xs-12 col-sm-4">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#celerity-collapsed-header" aria-expanded="false">
@@ -38,14 +39,15 @@
 							</ul>
 						</div>
 					</div>
+				</div>
 
 			</div>
 		</nav>
 
 		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="row">
+			<div class="container">
 
+				<div class="row">
 					<div class="navbar-header celerity-subheader-collapsed-buttons">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#celerity-collapsed-subheader" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
@@ -65,12 +67,13 @@
 							<li><a href="#">Button</a></li>
 							<li><a href="#">Button</a></li>
 							<li><a href="#">Button</a></li>
-							<li><a href="#">Button</a></li>
-							<li><a href="#">Button</a></li>
+							<!-- would only do this if the buttons were not important enough to see at certain smaller resoltions.... -->
+							<li class="hidden-sm"><a href="#">Button</a></li>
+							<li class="hidden-sm"><a href="#">Button</a></li>
 						</ul>
 					</div>
-
 				</div>
+
 			</div>
 		</nav>
 	</header>
@@ -105,7 +108,10 @@
 											</a>
 										</li>
 										<li>
-											<button class="celerity-custom-button-close"><i class="fa fa-close fa-lg"></i></button>
+											<button class="celerity-custom-button-close">
+												<span class="sr-only">Close Warning</span>
+												<i class="fa fa-close fa-lg"></i>
+											</button>
 										</li>
 									</ul>
 								</nav>
@@ -149,10 +155,10 @@
 					<section>
 						<div class="panel panel-default celerity-panel celerity-panel-bordered">
 							<header class="panel-heading clearfix">
-								<h1 class="panel-title pull-left">Section Title</h1>
-								<ul class="nav pull-right">
-									<li role="presentation" class="dropdown">
-										<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								<div class="row">
+									<h1 class="panel-title col-xs-12 col-sm-9 col-lg-10">Section Title</h1>
+									<div class="dropdown text-right col-xs-12 col-sm-3 col-lg-2" role="presentation">
+										<a class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 											Drop Down <span class="caret"></span>
 										</a>
 										<ul class="dropdown-menu">
@@ -160,8 +166,8 @@
 											<li>Bar?</li>
 											<li>BAZ!?</li>
 										</ul>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</header>
 							<div class="panel-body celerity-panel-flexbox">
 								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
@@ -176,7 +182,7 @@
 								</div>
 
 								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
-									<header>
+									<header class="clearfix">
 										<ul class="highchart-legend list-inline">
 											<li><h3 class="highchart-name">Chart Name <span class="highchart-metric highchart-metric-positive"><i class="fa fa-caret-up" aria-hidden="true"></i> 1%</span></h3></li>
 											<li class="highchart-legend-item first">Year</li>
@@ -235,8 +241,12 @@
 					<section>
 						<div class="panel panel-default celerity-panel celerity-panel-bordered">
 							<header class="panel-heading clearfix">
-								<h1 class="panel-title pull-left">Section Title</h1>
-								<button class="btn btn-default btn-extra-wide pull-right">Button</button>
+								<div class="row">
+									<h1 class="panel-title col-xs-12 col-sm-8 col-lg-9">Section Title</h1>
+									<div class="text-right hidden-xs col-xs-12 col-sm-4 col-lg-3">
+										<button class="btn btn-default btn-block">Button</button>
+									</div>
+								</div>
 							</header>
 							<div class="panel-body celerity-panel-flexbox">
 								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
@@ -365,7 +375,7 @@
 			</div>
 		</nav>
 
-		<!-- this is purposely not a nav element b/c it has no navigation !-->
+		<!-- this is purposely not a nav element b/c it has no navigation -->
 		<div class="navbar navbar-default celerity-navbar-custom">
 			<div class="container">
 				&#169; 2016 Celerity
