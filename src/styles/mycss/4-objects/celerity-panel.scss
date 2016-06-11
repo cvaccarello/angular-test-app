@@ -47,7 +47,7 @@
 	padding: 0;		// no grid gutters
 	margin: 0;
 	border-width: 0;
-	border-top-width: 1px;
+	border-top-width: 0;
 	border-color: $color-purple;
 	border-radius: 0;
 
@@ -59,7 +59,9 @@
 
 	&.celerity-panel-bordered {
 		.panel-heading {
-			border-top: 4px solid $color-green;
+			@media ($bp-sm) {
+				border-top: 4px solid $color-green;
+			}
 		}
 	}
 
