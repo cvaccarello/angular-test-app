@@ -1,0 +1,40 @@
+.btn-default {
+	color: $color-purple;
+	background: #ffffff;
+	border-color: $color-purple;
+
+	&:focus,
+	&:hover,
+	&:active {
+		color: $color-purple;
+		background: #ffffff;
+		border-color: $color-purple;
+	}
+
+	&.disabled,
+	&[disabled],
+	&.disabled:focus,
+	&[disabled]:focus,
+	&.disabled:hover,
+	&[disabled]:hover,
+	&.disabled:active,
+	&[disabled]:active {
+		color: $color-grey;
+		background: #ffffff;
+		border-color: $color-grey;
+	}
+}
+
+.btn-grey-border {
+	border-color: #ccc;
+
+	&:focus,
+	&:hover,
+	&:active {
+		border-color: #ccc;
+	}
+}
+
+.btn-extra-wide {
+	padding: 6px 40px
+}

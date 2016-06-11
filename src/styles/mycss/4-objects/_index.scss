@@ -1,4 +1,11 @@
 @import 'navbar';
+@import 'buttons';
 @import 'contextual-backgrounds';
 @import 'celerity-panel';
 @import 'celerity-callout';
+
+// needed for sticky footer
+.page-wrapper {
+	position: relative;
+	min-height: 100%;
+}

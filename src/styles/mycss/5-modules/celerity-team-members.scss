@@ -1,0 +1,19 @@
+
+.celerity-team-member {
+	background: #ffffff;
+	border-left: 1px solid #ddd;
+}
+
+.celerity-team-member-profile {
+	width: 50%;
+	background: #ebebeb;
+	padding-bottom: 50%;	// for older browser support
+	padding-bottom: calc(50% - 4px);
+	margin:  15px auto;
+	border: 2px solid $color-green;
+	border-radius: 100%;
+}
+
+.celerity-team-member-name {
+	 color: $color-purple;
+}

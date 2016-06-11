@@ -1,197 +1,319 @@
+<div class="page-wrapper">
+	<header class="celerity-header">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
 
-<header class="celerity-header">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
+					<div class="col-xs-12 col-sm-4">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#celerity-collapsed-header" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+							</button>
 
-				<div class="col-xs-12 col-sm-4">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#celerity-collapsed-header" aria-expanded="false">
+							<a class="navbar-brand" href="#"><img src="../../public/images/celerity-logo.png"></a>
+						</div>
+					</div>
+
+					<div id="celerity-collapsed-header" class="collapse navbar-collapse">
+						<div class="col-xs-12 col-sm-4">
+							<form class="navbar-form text-center" role="search">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search">
+									<span class="input-group-btn">
+										<button class="btn btn-default btn-grey-border" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+									</span>
+								</div>
+							</form>
+						</div>
+
+						<div class="col-xs-12 col-sm-4">
+							<ul class="nav navbar-nav navbar-right celerity-header-profile">
+								<li class="celerity-header-profile-item"><div class="celerity-header-profile-picture"></div></li>
+								<li>
+									<ul class="list-group">
+									  <li class="list-group-item"><strong>{{customer_name}}</strong></li>
+									  <li class="list-group-item celerity-miniheader"><a href="#">Account Settings</a> | <a href="#">Log out</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="navbar-header celerity-subheader-collapsed-buttons">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#celerity-collapsed-subheader" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
-							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+							Button
 						</button>
 
-						<a class="navbar-brand" href="#"><img src="../../public/images/celerity-logo.png"></a>
-					</div>
-				</div>
-
-				<div id="celerity-collapsed-header" class="collapse navbar-collapse">
-					<div class="col-xs-12 col-sm-4">
-						<form class="navbar-form text-center" role="search">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-								</span>
-							</div>
-						</form>
-					</div>
-
-					<div class="col-xs-12 col-sm-4">
-						<ul class="nav navbar-nav navbar-right celerity-header-profile">
-							<li class="celerity-header-profile-item"><div class="celerity-header-profile-picture"></div></li>
-							<li>
-								<ul class="list-group">
-								  <li class="list-group-item"><strong>{{customer_name}}</strong></li>
-								  <li class="list-group-item celerity-miniheader"><a href="#">Account Settings</a> | <a href="#">Log out</a></li>
-								</ul>
-							</li>
+						<ul class="nav navbar-nav celerity-subheader-notifications">
+							<li><a href="#" class="celerity-notification"><span class="badge">13</span> Notification</a></li>
+							<li><a href="#" class="celerity-notification"><span class="badge">4</span> Notification</a></li>
 						</ul>
 					</div>
+
+					<div id="celerity-collapsed-subheader" class="collapse navbar-collapse celerity-subheader-buttons">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Button</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+	<main>
+		<div class="container">
+			<div class="col-xs-12">
+				<div class="row">
+					<p class="bg-warning"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i> <strong>{{client_name}}:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut lacinia ipsum. Fusce consequat, nibh id egestas iaculis...</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<section>
+						<div class="panel panel-default celerity-panel">
+							<header class="panel-heading">
+								<h1 class="panel-title">Section Title</h1>
+							</header>
+							<div class="panel-body">
+								<div class="panel panel-default celerity-subpanel celerity-panel-bordered col-xs-12 col-sm-6 pull-right">
+									<header class="panel-heading">
+										<h2 class="panel-title">Sub section title</h2>
+									</header>
+
+									<div class="panel-body">
+										<div class="celerity-callout">
+											<h3 class="celerity-callout-title">Title Goes Here. Right Here.</h3>
+											<p><strong>Section:</strong> Title Goes Here | Date</p>
+										</div>
+										<p>Integer elementum est erat, nec accumsan metus posuere in. Etiam condimentum sodales risus vel maximus. Donec iaculis finibus velit, et rhoncus metus gravida at. Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis felis a sem ultricies tempor ac sit amet quam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<section>
+						<div class="panel panel-default celerity-panel celerity-panel-bordered">
+							<header class="panel-heading">
+								<h1 class="panel-title">Section Title</h1>
+							</header>
+							<div class="panel-body celerity-panel-flexbox">
+								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
+									<div class="panel-body">
+										<div class="celerity-callout">
+											<h3 class="celerity-callout-title">Title Goes Here.</h3>
+											<p><strong>Section:</strong> Title Goes Here | Date</p>
+										</div>
+										<p>Integer elementum est erat, nec accumsan metus posuere in. Etiam condimentum sodales risus vel maximus. Donec iaculis finibus velit, et rhoncus metus gravida at. Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis felis a sem ultricies tempor ac sit amet quam.</p>
+									</div>
+								</div>
+
+								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
+									HIGHCHART GRAPH GOES HERE
+								</div>
+
+								<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
+									<div class="panel-body">
+										<div class="celerity-callout">
+											<h3 class="celerity-callout-title">Title Goes Here.</h3>
+											<p><strong>Section:</strong> Title Goes Here | Date</p>
+										</div>
+										<p>Integer elementum est erat, nec accumsan metus posuere in. Etiam condimentum sodales risus vel maximus. Donec iaculis finibus velit, et rhoncus metus gravida at. Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<section>
+						<div class="panel panel-default celerity-panel celerity-panel-bordered">
+							<header class="panel-heading">
+								<h1 class="panel-title">Section Title</h1>
+							</header>
+							<div class="panel-body">
+								<div class="panel panel-default celerity-subpanel">
+									<div class="panel-body">
+										<div class="celerity-callout">
+											<h3 class="celerity-callout-title">Title Goes Here.</h3>
+											<p><strong>Section:</strong> Title Goes Here | Date</p>
+										</div>
+										<p>Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus.</p>
+									</div>
+									<footer class="celerity-footer-bordered">
+										<nav class="text-center">
+											<a href="#" class="btn-default btn-lg celerity-custom-section-link"><i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Section Link</a>
+										</nav>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 
+				<div class="col-xs-12 col-sm-8">
+					<section>
+						<div class="panel panel-default celerity-panel celerity-panel-bordered">
+							<header class="panel-heading clearfix">
+								<h1 class="panel-title pull-left">Section Title</h1>
+								<button class="btn btn-default btn-extra-wide pull-right">Button</button>
+							</header>
+							<div class="panel-body celerity-panel-flexbox">
+								<div class="celerity-team-member col-xs-12 col-sm-4">
+									<div class="celerity-team-member-profile"></div>
+									<strong class="celerity-team-member-name">Team Member Name</strong>
+									<div>Job Title</div>
+
+									<footer>
+										<nav>
+											<button class="btn btn-default btn-sm disabled" disabled="disabled">
+												<span class="sr-only">Email</span>
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</button>
+											<button class="btn btn-default btn-sm disabled" disabled="disabled">
+												<span class="sr-only">Phone Number</span>
+												<i class="fa fa-phone" aria-hidden="true"></i>
+											</button>
+										</nav>
+									</footer>
+								</div>
+
+								<div class="celerity-team-member col-xs-12 col-sm-4">
+									<div class="celerity-team-member-profile"></div>
+									<strong class="celerity-team-member-name">Team Member Name</strong>
+									<div>Job Title</div>
+
+									<footer>
+										<nav>
+											<button class="btn btn-default btn-sm disabled" disabled="disabled">
+												<span class="sr-only">Email</span>
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</button>
+											<button class="btn btn-default btn-sm disabled" disabled="disabled">
+												<span class="sr-only">Phone Number</span>
+												<i class="fa fa-phone" aria-hidden="true"></i>
+											</button>
+										</nav>
+									</footer>
+								</div>
+
+								<div class="celerity-team-member col-xs-12 col-sm-4">
+									<div class="celerity-team-member-profile"></div>
+									<strong class="celerity-team-member-name">Team Member Name</strong>
+									<div>Job Title</div>
+
+									<footer>
+										<nav>
+											<button class="btn btn-default btn-sm disabled" disabled="disabled">
+												<span class="sr-only">Email</span>
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</button>
+											<button class="btn btn-default btn-sm disabled" disabled="disabled">
+												<span class="sr-only">Phone Number</span>
+												<i class="fa fa-phone" aria-hidden="true"></i>
+											</button>
+										</nav>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
 		</div>
-	</nav>
+	</main>
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="row">
 
-				<div class="navbar-header celerity-subheader-collapsed-buttons">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#celerity-collapsed-subheader" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						Button
-					</button>
 
-					<ul class="nav navbar-nav celerity-subheader-notifications">
-						<li><a href="#" class="celerity-notification"><span class="badge">13</span> Notification</a></li>
-						<li><a href="#" class="celerity-notification"><span class="badge">4</span> Notification</a></li>
+
+	<footer class="celerity-footer">
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+				</div>
+
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+					<ul class="nav">
+						<li><a href="#">Content Link</a></li>
+						<li><a href="#">Content Link</a></li>
 					</ul>
 				</div>
 
-				<div id="celerity-collapsed-subheader" class="collapse navbar-collapse celerity-subheader-buttons">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Button</a></li>
-						<li><a href="#">Button</a></li>
-						<li><a href="#">Button</a></li>
-						<li><a href="#">Button</a></li>
-						<li><a href="#">Button</a></li>
-						<li><a href="#">Button</a></li>
-						<li><a href="#">Button</a></li>
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+					<ul class="nav">
+						<li><a href="#">Content Link</a></li>
+						<li><a href="#">Content Link</a></li>
 					</ul>
 				</div>
 
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+					<ul class="nav">
+						<li><a href="#">Content Link</a></li>
+						<li><a href="#">Content Link</a></li>
+					</ul>
+				</div>
+
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+					<ul class="nav">
+						<li><a href="#">Content Link</a></li>
+						<li><a href="#">Content Link</a></li>
+					</ul>
+				</div>
+
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+					<ul class="nav">
+						<li><a href="#">Content Link</a></li>
+						<li><a href="#">Content Link</a></li>
+					</ul>
+				</div>
+
+				<div class="celerity-footer-col">
+					<div class="celerity-footer-title">Content Link</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<!-- this is purposely not a nav element b/c it has no navigation !-->
+		<div class="navbar navbar-default celerity-navbar-custom">
+			<div class="container">
+				&#169; 2016 Celerity
 			</div>
 		</div>
-	</nav>
-</header>
-<main>
-	<div class="container">
-		<div class="col-xs-12">
-			<div class="row">
-				<p class="bg-warning"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i> <strong>{{client_name}}:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut lacinia ipsum. Fusce consequat, nibh id egestas iaculis...</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-12">
-				<section>
-					<div class="panel panel-default celerity-panel">
-						<header class="panel-heading">
-							<h1 class="panel-title">Section Title</h1>
-						</header>
-						<div class="panel-body">
-							<div class="panel panel-default celerity-subpanel celerity-panel-bordered col-xs-12 col-sm-6 pull-right">
-								<header class="panel-heading">
-									<h2 class="panel-title">Sub section title</h2>
-								</header>
-
-								<div class="panel-body">
-									<div class="celerity-callout">
-										<h3 class="celerity-callout-title">Title Goes Here. Right Here.</h3>
-										<p><strong>Section:</strong> Title Goes Here | Date</p>
-									</div>
-									<p>Integer elementum est erat, nec accumsan metus posuere in. Etiam condimentum sodales risus vel maximus. Donec iaculis finibus velit, et rhoncus metus gravida at. Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis felis a sem ultricies tempor ac sit amet quam.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-12">
-				<section>
-					<div class="panel panel-default celerity-panel celerity-panel-bordered">
-						<header class="panel-heading">
-							<h1 class="panel-title">Section Title</h1>
-						</header>
-						<div class="panel-body celerity-panel-flexbox">
-							<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
-								<div class="panel-body">
-									<div class="celerity-callout">
-										<h3 class="celerity-callout-title">Title Goes Here.</h3>
-										<p><strong>Section:</strong> Title Goes Here | Date</p>
-									</div>
-									<p>Integer elementum est erat, nec accumsan metus posuere in. Etiam condimentum sodales risus vel maximus. Donec iaculis finibus velit, et rhoncus metus gravida at. Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis felis a sem ultricies tempor ac sit amet quam.</p>
-								</div>
-							</div>
-
-							<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
-								HIGHCHART GRAPH GOES HERE
-							</div>
-
-							<div class="panel panel-default celerity-subpanel col-xs-12 col-sm-4">
-								<div class="panel-body">
-									<div class="celerity-callout">
-										<h3 class="celerity-callout-title">Title Goes Here.</h3>
-										<p><strong>Section:</strong> Title Goes Here | Date</p>
-									</div>
-									<p>Integer elementum est erat, nec accumsan metus posuere in. Etiam condimentum sodales risus vel maximus. Donec iaculis finibus velit, et rhoncus metus gravida at. Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-12 col-sm-4">
-				<section>
-					<div class="panel panel-default celerity-panel celerity-panel-bordered">
-						<header class="panel-heading">
-							<h1 class="panel-title">Section Title</h1>
-						</header>
-						<div class="panel-body">
-							<div class="panel panel-default celerity-subpanel">
-								<div class="panel-body">
-									<div class="celerity-callout">
-										<h3 class="celerity-callout-title">Title Goes Here.</h3>
-										<p><strong>Section:</strong> Title Goes Here | Date</p>
-									</div>
-									<p>Nam feugiat nunc urna, non maximus tellus scelerisque ac. In fringilla, velit ut vestibulum faucibus, nisl nisl posuere ipsum, a sagittis leo purus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ante eu augue facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultricies fermentum est, vel tincidunt nunc ultricies id. Proin vestibulum iaculis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis felis a sem ultricies tempor ac sit amet quam.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-			<div class="col-xs-12 col-sm-8">
-				<section>
-					<div class="panel panel-default celerity-panel celerity-panel-bordered">
-						<header class="panel-heading">
-							<h1 class="panel-title">Section Title</h1>
-							<button class="btn btn-white pull-right">Button</button>
-						</header>
-						<div class="panel-body celerity-panel-flexbox">
-							<div class="col-xs-12 col-sm-4">
-								foo
-							</div>
-
-							<div class="col-xs-12 col-sm-4">
-								bar
-							</div>
-
-							<div class="col-xs-12 col-sm-4">
-								baz
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-
-	</div>
-</main>
+	</footer>
+</div>
