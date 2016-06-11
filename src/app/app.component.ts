@@ -78,10 +78,10 @@ export class AppComponent {
                 }
             },
 			series: [{
-			    name: 'year',
+			    name: 'item #1',
 			    data: [42, 40, 37, 40, 45, 50, 60, 77]
 			},{
-				name: 'year',
+				name: 'item #2',
 				data: [48, 38, 30, 40, 48, 65, 58, 90]
 			}]
         };
