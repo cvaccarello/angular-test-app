@@ -12,6 +12,10 @@
 		color: $color-purple;
 		background: #ffffff;
 		padding: 5px 0;
+
+		.fa {
+			color: lighten($color-grey, 20%);
+		}
 	}
 
 	.navbar-inverse {
